@@ -1,5 +1,6 @@
-## git-tips
-> Collection of `git-tips`, want to add your tips? Checkout [contributing.md](./contributing.md)
+# git-random-tips
+
+Z Shell demo plugin for https://community.nitrous.io/ guide. 
 
 <!-- @doxie.inject start toc -->
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
