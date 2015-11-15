@@ -2,6 +2,12 @@
 
 Z Shell demo plugin for https://community.nitrous.io/ guide. 
 
+##oh-my-zsh
+
+```bash
+git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plugins/git-random-tips
+```
+
 <!-- @doxie.inject start toc -->
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
 * [Everyday Git in twenty commands or so](https://github.com/git-tips/tips#everyday-git-in-twenty-commands-or-so)
