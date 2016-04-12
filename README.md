@@ -1,11 +1,11 @@
-# git-random-tips
+# Nitrous Zsh Demo Plugin
 
-Z Shell demo plugin for https://community.nitrous.io/ guide. 
+Z Shell demo plugin for ["Customising Z Shell (zsh) in Nitrous Projects"](https://community.nitrous.io/tutorials/customising-z-shell-zsh-in-nitrous-projects) community guide on [Nitrous.io](https://www.nitrous.io) 
 
-##oh-my-zsh
+## oh-my-zsh
 
 ```bash
-git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plugins/git-random-tips
+$ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plugins/git-random-tips
 ```
 
 <!-- @doxie.inject start toc -->
