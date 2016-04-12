@@ -11,6 +11,7 @@ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plug
 <!-- @doxie.inject start toc -->
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
 * [Everyday Git in twenty commands or so](https://github.com/git-tips/tips#everyday-git-in-twenty-commands-or-so)
+* [Show helpful guides that come with Git](https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git)
 * [Overwrite pull](https://github.com/git-tips/tips#overwrite-pull)
 * [List of all files till a commit](https://github.com/git-tips/tips#list-of-all-files-till-a-commit)
 * [Git reset first commit](https://github.com/git-tips/tips#git-reset-first-commit)
@@ -30,6 +31,8 @@ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plug
 * [Revert: Undo a commit by creating a new commit](https://github.com/git-tips/tips#revert-undo-a-commit-by-creating-a-new-commit)
 * [Reset: Discard commits, advised for private branch](https://github.com/git-tips/tips#reset-discard-commits-advised-for-private-branch)
 * [Reword the previous commit message](https://github.com/git-tips/tips#reword-the-previous-commit-message)
+* [Amend author.](https://github.com/git-tips/tips#amend-author)
+* [Reset author, after author has been changed in the global config.](https://github.com/git-tips/tips#reset-author-after-author-has-been-changed-in-the-global-config)
 * [Changing a remote's URL](https://github.com/git-tips/tips#changing-a-remotes-url)
 * [Get list of all remote references](https://github.com/git-tips/tips#get-list-of-all-remote-references)
 * [Get list of all local and remote branches](https://github.com/git-tips/tips#get-list-of-all-local-and-remote-branches)
@@ -47,11 +50,13 @@ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plug
 * [Apply any stash without deleting from the stashed list](https://github.com/git-tips/tips#apply-any-stash-without-deleting-from-the-stashed-list)
 * [Apply last stashed state and delete it from stashed list](https://github.com/git-tips/tips#apply-last-stashed-state-and-delete-it-from-stashed-list)
 * [Delete all stored stashes](https://github.com/git-tips/tips#delete-all-stored-stashes)
+* [Grab a single file from a stash](https://github.com/git-tips/tips#grab-a-single-file-from-a-stash)
 * [Show all tracked files](https://github.com/git-tips/tips#show-all-tracked-files)
 * [Show all untracked files](https://github.com/git-tips/tips#show-all-untracked-files)
 * [Show all ignored files](https://github.com/git-tips/tips#show-all-ignored-files)
 * [Create new working tree from a repository (git 2.5)](https://github.com/git-tips/tips#create-new-working-tree-from-a-repository-git-25)
 * [Create new working tree from HEAD state](https://github.com/git-tips/tips#create-new-working-tree-from-head-state)
+* [Untrack files without deleting](https://github.com/git-tips/tips#untrack-files-without-deleting)
 * [Before deleting untracked files/directory, do a dry run to get the list of these files/directories](https://github.com/git-tips/tips#before-deleting-untracked-filesdirectory-do-a-dry-run-to-get-the-list-of-these-filesdirectories)
 * [Forcefully remove untracked files](https://github.com/git-tips/tips#forcefully-remove-untracked-files)
 * [Forcefully remove untracked directory](https://github.com/git-tips/tips#forcefully-remove-untracked-directory)
@@ -73,7 +78,33 @@ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plug
 * [Ignore one file on commit (e.g. Changelog).](https://github.com/git-tips/tips#ignore-one-file-on-commit-eg-changelog)
 * [Stash changes before rebasing](https://github.com/git-tips/tips#stash-changes-before-rebasing)
 * [Fetch pull request by ID to a local branch](https://github.com/git-tips/tips#fetch-pull-request-by-id-to-a-local-branch)
-* [Show the most recent tag on the current branch](https://github.com/git-tips/tips#show-the-most-recent-tag-on-the-current-branch)
+* [Show the most recent tag on the current branch.](https://github.com/git-tips/tips#show-the-most-recent-tag-on-the-current-branch)
+* [Show inline word diff.](https://github.com/git-tips/tips#show-inline-word-diff)
+* [Don’t consider changes for tracked file.](https://github.com/git-tips/tips#dont-consider-changes-for-tracked-file)
+* [Undo assume-unchanged.](https://github.com/git-tips/tips#undo-assume-unchanged)
+* [Clean the files from `.gitignore`.](https://github.com/git-tips/tips#clean-the-files-from-gitignore)
+* [Restore deleted file.](https://github.com/git-tips/tips#restore-deleted-file)
+* [Restore file to a specific commit-hash](https://github.com/git-tips/tips#restore-file-to-a-specific-commit-hash)
+* [Always rebase instead of merge on pull.](https://github.com/git-tips/tips#always-rebase-instead-of-merge-on-pull)
+* [List all the alias and configs.](https://github.com/git-tips/tips#list-all-the-alias-and-configs)
+* [Make git case sensitive.](https://github.com/git-tips/tips#make-git-case-sensitive)
+* [Auto correct typos.](https://github.com/git-tips/tips#auto-correct-typos)
+* [Check if the change was a part of a release.](https://github.com/git-tips/tips#check-if-the-change-was-a-part-of-a-release)
+* [Dry run. (any command that supports dry-run flag should do.)](https://github.com/git-tips/tips#dry-run-any-command-that-supports-dry-run-flag-should-do)
+* [Marks your commit as a fix of a previous commit.](https://github.com/git-tips/tips#marks-your-commit-as-a-fix-of-a-previous-commit)
+* [squash fixup commits normal commits.](https://github.com/git-tips/tips#squash-fixup-commits-normal-commits)
+* [skip staging area during commit.](https://github.com/git-tips/tips#skip-staging-area-during-commit)
+* [List ignored files.](https://github.com/git-tips/tips#list-ignored-files)
+* [Status of ignored files.](https://github.com/git-tips/tips#status-of-ignored-files)
+* [Commits in Branch1 that are not in Branch2](https://github.com/git-tips/tips#commits-in-branch1-that-are-not-in-branch2)
+* [reuse recorded resolution, record and reuse previous conflicts resolutions.](https://github.com/git-tips/tips#reuse-recorded-resolution-record-and-reuse-previous-conflicts-resolutions)
+* [Open all conflicted files in an editor.](https://github.com/git-tips/tips#open-all-conflicted-files-in-an-editor)
+* [Count unpacked number of objects and their disk consumption.](https://github.com/git-tips/tips#count-unpacked-number-of-objects-and-their-disk-consumption)
+* [Prune all unreachable objects from the object database.](https://github.com/git-tips/tips#prune-all-unreachable-objects-from-the-object-database)
+* [Instantly browse your working repository in gitweb.](https://github.com/git-tips/tips#instantly-browse-your-working-repository-in-gitweb)
+* [View the GPG signatures in the commit log](https://github.com/git-tips/tips#view-the-gpg-signatures-in-the-commit-log)
+* [Remove entry in the global config.](https://github.com/git-tips/tips#remove-entry-in-the-global-config)
+* [Checkout a new branch without any history](https://github.com/git-tips/tips#checkout-a-new-branch-without-any-history)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
@@ -84,6 +115,11 @@ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plug
 ## Everyday Git in twenty commands or so
 ```sh
 git help everyday
+```
+
+## Show helpful guides that come with Git
+```sh
+git help -g
 ```
 
 ## Overwrite pull
@@ -185,6 +221,16 @@ git reset <commit-ish>
 ## Reword the previous commit message
 ```sh
 git commit -v --amend
+```
+
+## Amend author.
+```sh
+git commit --amend --author='Author Name <email@address.com>'
+```
+
+## Reset author, after author has been changed in the global config.
+```sh
+git commit --amend --reset-author --no-edit
 ```
 
 ## Changing a remote's URL
@@ -309,6 +355,17 @@ __Alternatives:__
 git stash drop <stash@{n}>
 ```
 
+## Grab a single file from a stash
+```sh
+git checkout <stash@{n}> -- <file_path>
+```
+
+
+__Alternatives:__
+```sh
+git checkout stash@{0} -- <file_path>
+```
+
 ## Show all tracked files
 ```sh
 git ls-files -t
@@ -332,6 +389,17 @@ git worktree add -b <branch-name> <path> <start-point>
 ## Create new working tree from HEAD state
 ```sh
 git worktree add --detach <path> HEAD
+```
+
+## Untrack files without deleting
+```sh
+git rm --cached <file_path>
+```
+
+
+__Alternatives:__
+```sh
+git rm --cached -r <directory_path>
 ```
 
 ## Before deleting untracked files/directory, do a dry run to get the list of these files/directories
@@ -475,9 +543,139 @@ __Alternatives:__
 git pull origin pull/<id>/head:<branch-name>
 ```
 
-## Show the most recent tag on the current branch
+## Show the most recent tag on the current branch.
 ```sh
 git describe --tags --abbrev=0
+```
+
+## Show inline word diff.
+```sh
+git diff --word-diff
+```
+
+## Don’t consider changes for tracked file.
+```sh
+git update-index --assume-unchanged <file_name>
+```
+
+## Undo assume-unchanged.
+```sh
+git update-index --no-assume-unchanged <file_name>
+```
+
+## Clean the files from `.gitignore`.
+```sh
+git clean -X -f
+```
+
+## Restore deleted file.
+```sh
+git checkout <deleting_commit>^ -- <file_path>
+```
+
+## Restore file to a specific commit-hash
+```sh
+git checkout <commit-ish> -- <file_path>
+```
+
+## Always rebase instead of merge on pull.
+```sh
+git config --global branch.autosetuprebase always
+```
+
+## List all the alias and configs.
+```sh
+git config --list
+```
+
+## Make git case sensitive.
+```sh
+git config --global core.ignorecase false
+```
+
+## Auto correct typos.
+```sh
+git config --global help.autocorrect 1
+```
+
+## Check if the change was a part of a release.
+```sh
+git name-rev --name-only <SHA-1>
+```
+
+## Dry run. (any command that supports dry-run flag should do.)
+```sh
+git clean -fd --dry-run
+```
+
+## Marks your commit as a fix of a previous commit.
+```sh
+git commit --fixup <SHA-1>
+```
+
+## squash fixup commits normal commits.
+```sh
+git rebase -i --autosquash
+```
+
+## skip staging area during commit.
+```sh
+git commit -am <commit message>
+```
+
+## List ignored files.
+```sh
+git check-ignore *
+```
+
+## Status of ignored files.
+```sh
+git status --ignored
+```
+
+## Commits in Branch1 that are not in Branch2
+```sh
+git log Branch1 ^Branch2
+```
+
+## reuse recorded resolution, record and reuse previous conflicts resolutions.
+```sh
+git config --global rerere.enabled 1
+```
+
+## Open all conflicted files in an editor.
+```sh
+git diff --name-only | uniq | xargs $EDITOR
+```
+
+## Count unpacked number of objects and their disk consumption.
+```sh
+git count-objects --human-readable
+```
+
+## Prune all unreachable objects from the object database.
+```sh
+git gc --prune=now --aggressive
+```
+
+## Instantly browse your working repository in gitweb.
+```sh
+git instaweb [--local] [--httpd=<httpd>] [--port=<port>] [--browser=<browser>]
+```
+
+## View the GPG signatures in the commit log
+```sh
+git log --show-signature
+```
+
+## Remove entry in the global config.
+```sh
+git config --global --unset <entry-name>
+```
+
+## Checkout a new branch without any history
+```sh
+git checkout --orphan <branch_name>
 ```
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
