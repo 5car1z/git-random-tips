@@ -8,103 +8,170 @@ Z Shell demo plugin for ["Customising Z Shell (zsh) in Nitrous Projects"](https:
 $ git clone https://github.com/5car1z/git-random-tips.git ~/.oh-my-zsh/custom/plugins/git-random-tips
 ```
 
+[English](http://git.io/git-tips) | [中文](https://github.com/521xueweihan/git-tips) | [Русский](https://github.com/Imangazaliev/git-tips) | [한국어](https://github.com/mingrammer/git-tips)
+
+### __Tools:__
+
+* [git-tip](https://www.npmjs.com/package/git-tip) - A handy CLI to make optimum use of these tips. ([Here in Docker container](https://github.com/djoudi5/docker-git-tip))
+
+P.S: All these commands are tested on `git version 2.7.4 (Apple Git-66)`.
+
 <!-- @doxie.inject start toc -->
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
-* [Everyday Git in twenty commands or so](https://github.com/git-tips/tips#everyday-git-in-twenty-commands-or-so)
-* [Show helpful guides that come with Git](https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git)
-* [Overwrite pull](https://github.com/git-tips/tips#overwrite-pull)
-* [List of all files till a commit](https://github.com/git-tips/tips#list-of-all-files-till-a-commit)
-* [Git reset first commit](https://github.com/git-tips/tips#git-reset-first-commit)
-* [List all the conflicted files](https://github.com/git-tips/tips#list-all-the-conflicted-files)
-* [List of all files changed in a commit](https://github.com/git-tips/tips#list-of-all-files-changed-in-a-commit)
-* [Unstaged changes since last commit](https://github.com/git-tips/tips#unstaged-changes-since-last-commit)
-* [Changes staged for commit](https://github.com/git-tips/tips#changes-staged-for-commit)
-* [Show both staged and unstaged changes](https://github.com/git-tips/tips#show-both-staged-and-unstaged-changes)
-* [List all branches that are already merged into master](https://github.com/git-tips/tips#list-all-branches-that-are-already-merged-into-master)
-* [Quickly switch to the previous branch](https://github.com/git-tips/tips#quickly-switch-to-the-previous-branch)
-* [Remove branches that have already been merged with master](https://github.com/git-tips/tips#remove-branches-that-have-already-been-merged-with-master)
-* [List all branches and their upstreams, as well as last commit on branch](https://github.com/git-tips/tips#list-all-branches-and-their-upstreams-as-well-as-last-commit-on-branch)
-* [Track upstream branch](https://github.com/git-tips/tips#track-upstream-branch)
-* [Delete local branch](https://github.com/git-tips/tips#delete-local-branch)
-* [Delete remote branch](https://github.com/git-tips/tips#delete-remote-branch)
-* [Undo local changes with the last content in head](https://github.com/git-tips/tips#undo-local-changes-with-the-last-content-in-head)
-* [Revert: Undo a commit by creating a new commit](https://github.com/git-tips/tips#revert-undo-a-commit-by-creating-a-new-commit)
-* [Reset: Discard commits, advised for private branch](https://github.com/git-tips/tips#reset-discard-commits-advised-for-private-branch)
-* [Reword the previous commit message](https://github.com/git-tips/tips#reword-the-previous-commit-message)
-* [Amend author.](https://github.com/git-tips/tips#amend-author)
-* [Reset author, after author has been changed in the global config.](https://github.com/git-tips/tips#reset-author-after-author-has-been-changed-in-the-global-config)
-* [Changing a remote's URL](https://github.com/git-tips/tips#changing-a-remotes-url)
-* [Get list of all remote references](https://github.com/git-tips/tips#get-list-of-all-remote-references)
-* [Get list of all local and remote branches](https://github.com/git-tips/tips#get-list-of-all-local-and-remote-branches)
-* [Get only remote branches](https://github.com/git-tips/tips#get-only-remote-branches)
-* [Stage parts of a changed file, instead of the entire file](https://github.com/git-tips/tips#stage-parts-of-a-changed-file-instead-of-the-entire-file)
-* [Get git bash completion](https://github.com/git-tips/tips#get-git-bash-completion)
-* [What changed since two weeks?](https://github.com/git-tips/tips#what-changed-since-two-weeks)
-* [See all commits made since forking from master](https://github.com/git-tips/tips#see-all-commits-made-since-forking-from-master)
-* [Pick commits across branches using cherry-pick](https://github.com/git-tips/tips#pick-commits-across-branches-using-cherry-pick)
-* [Find out branches containing commit-hash](https://github.com/git-tips/tips#find-out-branches-containing-commit-hash)
-* [Git Aliases](https://github.com/git-tips/tips#git-aliases)
-* [Saving current state of tracked files without commiting](https://github.com/git-tips/tips#saving-current-state-of-tracked-files-without-commiting)
-* [Saving current state including untracked files](https://github.com/git-tips/tips#saving-current-state-including-untracked-files)
-* [Show list of all saved stashes](https://github.com/git-tips/tips#show-list-of-all-saved-stashes)
-* [Apply any stash without deleting from the stashed list](https://github.com/git-tips/tips#apply-any-stash-without-deleting-from-the-stashed-list)
-* [Apply last stashed state and delete it from stashed list](https://github.com/git-tips/tips#apply-last-stashed-state-and-delete-it-from-stashed-list)
-* [Delete all stored stashes](https://github.com/git-tips/tips#delete-all-stored-stashes)
-* [Grab a single file from a stash](https://github.com/git-tips/tips#grab-a-single-file-from-a-stash)
-* [Show all tracked files](https://github.com/git-tips/tips#show-all-tracked-files)
-* [Show all untracked files](https://github.com/git-tips/tips#show-all-untracked-files)
-* [Show all ignored files](https://github.com/git-tips/tips#show-all-ignored-files)
-* [Create new working tree from a repository (git 2.5)](https://github.com/git-tips/tips#create-new-working-tree-from-a-repository-git-25)
-* [Create new working tree from HEAD state](https://github.com/git-tips/tips#create-new-working-tree-from-head-state)
-* [Untrack files without deleting](https://github.com/git-tips/tips#untrack-files-without-deleting)
-* [Before deleting untracked files/directory, do a dry run to get the list of these files/directories](https://github.com/git-tips/tips#before-deleting-untracked-filesdirectory-do-a-dry-run-to-get-the-list-of-these-filesdirectories)
-* [Forcefully remove untracked files](https://github.com/git-tips/tips#forcefully-remove-untracked-files)
-* [Forcefully remove untracked directory](https://github.com/git-tips/tips#forcefully-remove-untracked-directory)
-* [Update all the submodules](https://github.com/git-tips/tips#update-all-the-submodules)
-* [Show all commits in the current branch yet to be merged to master](https://github.com/git-tips/tips#show-all-commits-in-the-current-branch-yet-to-be-merged-to-master)
-* [Rename a branch](https://github.com/git-tips/tips#rename-a-branch)
-* [rebases 'feature' to 'master' and merges it in to master ](https://github.com/git-tips/tips#rebases-feature-to-master-and-merges-it-in-to-master)
-* [Archive the `master` branch](https://github.com/git-tips/tips#archive-the-master-branch)
-* [Modify previous commit without modifying the commit message](https://github.com/git-tips/tips#modify-previous-commit-without-modifying-the-commit-message)
-* [Prunes branches that have been deleted in the remote.](https://github.com/git-tips/tips#prunes-branches-that-have-been-deleted-in-the-remote)
-* [Retrieve the commit hash of the initial revision.](https://github.com/git-tips/tips#retrieve-the-commit-hash-of-the-initial-revision)
-* [Visualize the version tree.](https://github.com/git-tips/tips#visualize-the-version-tree)
-* [Deploying git tracked subfolder to gh-pages](https://github.com/git-tips/tips#deploying-git-tracked-subfolder-to-gh-pages)
-* [Adding a project to repo using subtree](https://github.com/git-tips/tips#adding-a-project-to-repo-using-subtree)
-* [Get latest changes in your repo for a linked project using subtree](https://github.com/git-tips/tips#get-latest-changes-in-your-repo-for-a-linked-project-using-subtree)
-* [Export a branch with history to the a file.](https://github.com/git-tips/tips#export-a-branch-with-history-to-the-a-file)
-* [Import from a bundle](https://github.com/git-tips/tips#import-from-a-bundle)
-* [Get the name of current branch.](https://github.com/git-tips/tips#get-the-name-of-current-branch)
-* [Ignore one file on commit (e.g. Changelog).](https://github.com/git-tips/tips#ignore-one-file-on-commit-eg-changelog)
-* [Stash changes before rebasing](https://github.com/git-tips/tips#stash-changes-before-rebasing)
-* [Fetch pull request by ID to a local branch](https://github.com/git-tips/tips#fetch-pull-request-by-id-to-a-local-branch)
-* [Show the most recent tag on the current branch.](https://github.com/git-tips/tips#show-the-most-recent-tag-on-the-current-branch)
-* [Show inline word diff.](https://github.com/git-tips/tips#show-inline-word-diff)
-* [Don’t consider changes for tracked file.](https://github.com/git-tips/tips#dont-consider-changes-for-tracked-file)
-* [Undo assume-unchanged.](https://github.com/git-tips/tips#undo-assume-unchanged)
-* [Clean the files from `.gitignore`.](https://github.com/git-tips/tips#clean-the-files-from-gitignore)
-* [Restore deleted file.](https://github.com/git-tips/tips#restore-deleted-file)
-* [Restore file to a specific commit-hash](https://github.com/git-tips/tips#restore-file-to-a-specific-commit-hash)
-* [Always rebase instead of merge on pull.](https://github.com/git-tips/tips#always-rebase-instead-of-merge-on-pull)
-* [List all the alias and configs.](https://github.com/git-tips/tips#list-all-the-alias-and-configs)
-* [Make git case sensitive.](https://github.com/git-tips/tips#make-git-case-sensitive)
-* [Auto correct typos.](https://github.com/git-tips/tips#auto-correct-typos)
-* [Check if the change was a part of a release.](https://github.com/git-tips/tips#check-if-the-change-was-a-part-of-a-release)
-* [Dry run. (any command that supports dry-run flag should do.)](https://github.com/git-tips/tips#dry-run-any-command-that-supports-dry-run-flag-should-do)
-* [Marks your commit as a fix of a previous commit.](https://github.com/git-tips/tips#marks-your-commit-as-a-fix-of-a-previous-commit)
-* [squash fixup commits normal commits.](https://github.com/git-tips/tips#squash-fixup-commits-normal-commits)
-* [skip staging area during commit.](https://github.com/git-tips/tips#skip-staging-area-during-commit)
-* [List ignored files.](https://github.com/git-tips/tips#list-ignored-files)
-* [Status of ignored files.](https://github.com/git-tips/tips#status-of-ignored-files)
-* [Commits in Branch1 that are not in Branch2](https://github.com/git-tips/tips#commits-in-branch1-that-are-not-in-branch2)
-* [reuse recorded resolution, record and reuse previous conflicts resolutions.](https://github.com/git-tips/tips#reuse-recorded-resolution-record-and-reuse-previous-conflicts-resolutions)
-* [Open all conflicted files in an editor.](https://github.com/git-tips/tips#open-all-conflicted-files-in-an-editor)
-* [Count unpacked number of objects and their disk consumption.](https://github.com/git-tips/tips#count-unpacked-number-of-objects-and-their-disk-consumption)
-* [Prune all unreachable objects from the object database.](https://github.com/git-tips/tips#prune-all-unreachable-objects-from-the-object-database)
-* [Instantly browse your working repository in gitweb.](https://github.com/git-tips/tips#instantly-browse-your-working-repository-in-gitweb)
-* [View the GPG signatures in the commit log](https://github.com/git-tips/tips#view-the-gpg-signatures-in-the-commit-log)
-* [Remove entry in the global config.](https://github.com/git-tips/tips#remove-entry-in-the-global-config)
-* [Checkout a new branch without any history](https://github.com/git-tips/tips#checkout-a-new-branch-without-any-history)
+* [Everyday Git in twenty commands or so](#everyday-git-in-twenty-commands-or-so)
+* [Show helpful guides that come with Git](#show-helpful-guides-that-come-with-git)
+* [Search change by content](#search-change-by-content)
+* [Sync with remote, overwrite local changes](#sync-with-remote-overwrite-local-changes)
+* [List of all files till a commit](#list-of-all-files-till-a-commit)
+* [Git reset first commit](#git-reset-first-commit)
+* [List all the conflicted files](#list-all-the-conflicted-files)
+* [List of all files changed in a commit](#list-of-all-files-changed-in-a-commit)
+* [Unstaged changes since last commit](#unstaged-changes-since-last-commit)
+* [Changes staged for commit](#changes-staged-for-commit)
+* [Show both staged and unstaged changes](#show-both-staged-and-unstaged-changes)
+* [List all branches that are already merged into master](#list-all-branches-that-are-already-merged-into-master)
+* [Quickly switch to the previous branch](#quickly-switch-to-the-previous-branch)
+* [Remove branches that have already been merged with master](#remove-branches-that-have-already-been-merged-with-master)
+* [List all branches and their upstreams, as well as last commit on branch](#list-all-branches-and-their-upstreams-as-well-as-last-commit-on-branch)
+* [Track upstream branch](#track-upstream-branch)
+* [Delete local branch](#delete-local-branch)
+* [Delete remote branch](#delete-remote-branch)
+* [Delete local tag](#delete-local-tag)
+* [Delete remote tag](#delete-remote-tag)
+* [Undo local changes with the last content in head](#undo-local-changes-with-the-last-content-in-head)
+* [Revert: Undo a commit by creating a new commit](#revert-undo-a-commit-by-creating-a-new-commit)
+* [Reset: Discard commits, advised for private branch](#reset-discard-commits-advised-for-private-branch)
+* [Reword the previous commit message](#reword-the-previous-commit-message)
+* [See commit history for just the current branch](#see-commit-history-for-just-the-current-branch)
+* [Amend author.](#amend-author)
+* [Reset author, after author has been changed in the global config.](#reset-author-after-author-has-been-changed-in-the-global-config)
+* [Changing a remote's URL](#changing-a-remotes-url)
+* [Get list of all remote references](#get-list-of-all-remote-references)
+* [Get list of all local and remote branches](#get-list-of-all-local-and-remote-branches)
+* [Get only remote branches](#get-only-remote-branches)
+* [Stage parts of a changed file, instead of the entire file](#stage-parts-of-a-changed-file-instead-of-the-entire-file)
+* [Get git bash completion](#get-git-bash-completion)
+* [What changed since two weeks?](#what-changed-since-two-weeks)
+* [See all commits made since forking from master](#see-all-commits-made-since-forking-from-master)
+* [Pick commits across branches using cherry-pick](#pick-commits-across-branches-using-cherry-pick)
+* [Find out branches containing commit-hash](#find-out-branches-containing-commit-hash)
+* [Git Aliases](#git-aliases)
+* [Saving current state of tracked files without commiting](#saving-current-state-of-tracked-files-without-commiting)
+* [Saving current state of unstaged changes to tracked files](#saving-current-state-of-unstaged-changes-to-tracked-files)
+* [Saving current state including untracked files](#saving-current-state-including-untracked-files)
+* [Saving current state with message](#saving-current-state-with-message)
+* [Saving current state of all files (ignored, untracked, and tracked)](#saving-current-state-of-all-files-ignored-untracked-and-tracked)
+* [Show list of all saved stashes](#show-list-of-all-saved-stashes)
+* [Apply any stash without deleting from the stashed list](#apply-any-stash-without-deleting-from-the-stashed-list)
+* [Apply last stashed state and delete it from stashed list](#apply-last-stashed-state-and-delete-it-from-stashed-list)
+* [Delete all stored stashes](#delete-all-stored-stashes)
+* [Grab a single file from a stash](#grab-a-single-file-from-a-stash)
+* [Show all tracked files](#show-all-tracked-files)
+* [Show all untracked files](#show-all-untracked-files)
+* [Show all ignored files](#show-all-ignored-files)
+* [Create new working tree from a repository (git 2.5)](#create-new-working-tree-from-a-repository-git-25)
+* [Create new working tree from HEAD state](#create-new-working-tree-from-head-state)
+* [Untrack files without deleting](#untrack-files-without-deleting)
+* [Before deleting untracked files/directory, do a dry run to get the list of these files/directories](#before-deleting-untracked-filesdirectory-do-a-dry-run-to-get-the-list-of-these-filesdirectories)
+* [Forcefully remove untracked files](#forcefully-remove-untracked-files)
+* [Forcefully remove untracked directory](#forcefully-remove-untracked-directory)
+* [Update all the submodules](#update-all-the-submodules)
+* [Show all commits in the current branch yet to be merged to master](#show-all-commits-in-the-current-branch-yet-to-be-merged-to-master)
+* [Rename a branch](#rename-a-branch)
+* [Rebases 'feature' to 'master' and merges it in to master ](#rebases-feature-to-master-and-merges-it-in-to-master)
+* [Archive the `master` branch](#archive-the-master-branch)
+* [Modify previous commit without modifying the commit message](#modify-previous-commit-without-modifying-the-commit-message)
+* [Prunes references to remote branches that have been deleted in the remote.](#prunes-references-to-remote-branches-that-have-been-deleted-in-the-remote)
+* [Retrieve the commit hash of the initial revision.](#retrieve-the-commit-hash-of-the-initial-revision)
+* [Visualize the version tree.](#visualize-the-version-tree)
+* [Deploying git tracked subfolder to gh-pages](#deploying-git-tracked-subfolder-to-gh-pages)
+* [Adding a project to repo using subtree](#adding-a-project-to-repo-using-subtree)
+* [Get latest changes in your repo for a linked project using subtree](#get-latest-changes-in-your-repo-for-a-linked-project-using-subtree)
+* [Export a branch with history to a file.](#export-a-branch-with-history-to-a-file)
+* [Import from a bundle](#import-from-a-bundle)
+* [Get the name of current branch.](#get-the-name-of-current-branch)
+* [Ignore one file on commit (e.g. Changelog).](#ignore-one-file-on-commit-eg-changelog)
+* [Stash changes before rebasing](#stash-changes-before-rebasing)
+* [Fetch pull request by ID to a local branch](#fetch-pull-request-by-id-to-a-local-branch)
+* [Show the most recent tag on the current branch.](#show-the-most-recent-tag-on-the-current-branch)
+* [Show inline word diff.](#show-inline-word-diff)
+* [Show changes using common diff tools.](#show-changes-using-common-diff-tools)
+* [Don’t consider changes for tracked file.](#dont-consider-changes-for-tracked-file)
+* [Undo assume-unchanged.](#undo-assume-unchanged)
+* [Clean the files from `.gitignore`.](#clean-the-files-from-gitignore)
+* [Restore deleted file.](#restore-deleted-file)
+* [Restore file to a specific commit-hash](#restore-file-to-a-specific-commit-hash)
+* [Always rebase instead of merge on pull.](#always-rebase-instead-of-merge-on-pull)
+* [List all the alias and configs.](#list-all-the-alias-and-configs)
+* [Make git case sensitive.](#make-git-case-sensitive)
+* [Add custom editors.](#add-custom-editors)
+* [Auto correct typos.](#auto-correct-typos)
+* [Check if the change was a part of a release.](#check-if-the-change-was-a-part-of-a-release)
+* [Dry run. (any command that supports dry-run flag should do.)](#dry-run-any-command-that-supports-dry-run-flag-should-do)
+* [Marks your commit as a fix of a previous commit.](#marks-your-commit-as-a-fix-of-a-previous-commit)
+* [Squash fixup commits normal commits.](#squash-fixup-commits-normal-commits)
+* [Skip staging area during commit.](#skip-staging-area-during-commit)
+* [Interactive staging.](#interactive-staging)
+* [List ignored files.](#list-ignored-files)
+* [Status of ignored files.](#status-of-ignored-files)
+* [Commits in Branch1 that are not in Branch2](#commits-in-branch1-that-are-not-in-branch2)
+* [List n last commits](#list-n-last-commits)
+* [Reuse recorded resolution, record and reuse previous conflicts resolutions.](#reuse-recorded-resolution-record-and-reuse-previous-conflicts-resolutions)
+* [Open all conflicted files in an editor.](#open-all-conflicted-files-in-an-editor)
+* [Count unpacked number of objects and their disk consumption.](#count-unpacked-number-of-objects-and-their-disk-consumption)
+* [Prune all unreachable objects from the object database.](#prune-all-unreachable-objects-from-the-object-database)
+* [Instantly browse your working repository in gitweb.](#instantly-browse-your-working-repository-in-gitweb)
+* [View the GPG signatures in the commit log](#view-the-gpg-signatures-in-the-commit-log)
+* [Remove entry in the global config.](#remove-entry-in-the-global-config)
+* [Checkout a new branch without any history](#checkout-a-new-branch-without-any-history)
+* [Extract file from another branch.](#extract-file-from-another-branch)
+* [List only the root and merge commits.](#list-only-the-root-and-merge-commits)
+* [Change previous two commits with an interactive rebase.](#change-previous-two-commits-with-an-interactive-rebase)
+* [List all branch is WIP](#list-all-branch-is-wip)
+* [Find guilty with binary search](#find-guilty-with-binary-search)
+* [Bypass pre-commit and commit-msg githooks](#bypass-pre-commit-and-commit-msg-githooks)
+* [List commits and changes to a specific file (even through renaming)](#list-commits-and-changes-to-a-specific-file-even-through-renaming)
+* [Clone a single branch](#clone-a-single-branch)
+* [Create and switch new branch](#create-and-switch-new-branch)
+* [Ignore file mode changes on commits](#ignore-file-mode-changes-on-commits)
+* [Turn off git colored terminal output](#turn-off-git-colored-terminal-output)
+* [Specific color settings](#specific-color-settings)
+* [Show all local branches ordered by recent commits](#show-all-local-branches-ordered-by-recent-commits)
+* [Find lines matching the pattern (regex or string) in tracked files](#find-lines-matching-the-pattern-regex-or-string-in-tracked-files)
+* [Clone a shallow copy of a repository](#clone-a-shallow-copy-of-a-repository)
+* [Search Commit log across all branches for given text](#search-commit-log-across-all-branches-for-given-text)
+* [Get first commit in a branch (from master)](#get-first-commit-in-a-branch-from-master)
+* [Unstaging Staged file](#unstaging-staged-file)
+* [Force push to Remote Repository](#force-push-to-remote-repository)
+* [Adding Remote name](#adding-remote-name)
+* [Show the author, time and last revision made to each line of a given file](#show-the-author-time-and-last-revision-made-to-each-line-of-a-given-file)
+* [Group commits by authors and title](#group-commits-by-authors-and-title)
+* [Forced push but still ensure you don't overwrite other's work](#forced-push-but-still-ensure-you-dont-overwrite-others-work)
+* [Show how many lines does an author contribute](#show-how-many-lines-does-an-author-contribute)
+* [Revert: Reverting an entire merge](#revert-reverting-an-entire-merge)
+* [Number of commits in a branch](#number-of-commits-in-a-branch)
+* [Alias: git undo](#alias-git-undo)
+* [Add object notes](#add-object-notes)
+* [Show all the git-notes](#show-all-the-git-notes)
+* [Apply commit from another repository](#apply-commit-from-another-repository)
+* [Specific fetch reference](#specific-fetch-reference)
+* [Find common ancestor of two branches](#find-common-ancestor-of-two-branches)
+* [List unpushed git commits](#list-unpushed-git-commits)
+* [Add everything, but whitespace changes](#add-everything-but-whitespace-changes)
+* [Edit [local/global] git config](#edit-localglobal-git-config)
+* [blame on certain range](#blame-on-certain-range)
+* [Show a Git logical variable.](#show-a-git-logical-variable)
+* [Preformatted patch file.](#preformatted-patch-file)
+* [Get the repo name.](#get-the-repo-name)
+* [logs between date range](#logs-between-date-range)
+* [Exclude author from logs](#exclude-author-from-logs)
+* [Generates a summary of pending changes](#generates-a-summary-of-pending-changes)
+* [List references in a remote repository](#list-references-in-a-remote-repository)
+* [Backup untracked files.](#backup-untracked-files)
+* [List all git aliases](#list-all-git-aliases)
+* [Show git status short](#show-git-status-short)
+* [Checkout a commit prior to a day ago](#checkout-a-commit-prior-to-a-day-ago)
+* [Push a new local branch to remote repository and track](#push-a-new-local-branch-to-remote-repository-and-track)
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
 <!-- @doxie.inject end toc -->
@@ -122,9 +189,14 @@ git help everyday
 git help -g
 ```
 
-## Overwrite pull
+## Search change by content
 ```sh
-git fetch --all && git reset --hard origin/master
+git log -S'<a term in the source>'
+```
+
+## Sync with remote, overwrite local changes
+```sh
+git fetch origin && git reset --hard origin/master && git clean -f -d
 ```
 
 ## List of all files till a commit
@@ -157,6 +229,12 @@ git diff
 git diff --cached
 ```
 
+
+__Alternatives:__
+```sh
+git diff --staged
+```
+
 ## Show both staged and unstaged changes
 ```sh
 git diff HEAD
@@ -164,7 +242,7 @@ git diff HEAD
 
 ## List all branches that are already merged into master
 ```sh
-git checkout master && git branch --merged
+git branch --merged master
 ```
 
 ## Quickly switch to the previous branch
@@ -172,9 +250,21 @@ git checkout master && git branch --merged
 git checkout -
 ```
 
+
+__Alternatives:__
+```sh
+git checkout @{-1}
+```
+
 ## Remove branches that have already been merged with master
 ```sh
-git branch --merged | grep -v '\*' | xargs -n 1 git branch -d
+git branch --merged master | grep -v '^\*' | xargs -n 1 git branch -d
+```
+
+
+__Alternatives:__
+```sh
+git branch --merged master | grep -v '^\*\|  master' | xargs -n 1 git branch -d # will not delete master if master is not checked out
 ```
 
 ## List all branches and their upstreams, as well as last commit on branch
@@ -203,6 +293,16 @@ __Alternatives:__
 git push origin :<remote_branchname>
 ```
 
+## Delete local tag
+```sh
+git tag -d <tag-name>
+```
+
+## Delete remote tag
+```sh
+git push origin :refs/tags/<tag-name>
+```
+
 ## Undo local changes with the last content in head
 ```sh
 git checkout -- <file_name>
@@ -221,6 +321,11 @@ git reset <commit-ish>
 ## Reword the previous commit message
 ```sh
 git commit -v --amend
+```
+
+## See commit history for just the current branch
+```sh
+git cherry -v master
 ```
 
 ## Amend author.
@@ -271,6 +376,12 @@ curl http://git.io/vfhol > ~/.git-completion.bash && echo '[ -f ~/.git-completio
 
 ## What changed since two weeks?
 ```sh
+git log --no-merges --raw --since='2 weeks ago'
+```
+
+
+__Alternatives:__
+```sh
 git whatchanged --since='2 weeks ago'
 ```
 
@@ -281,7 +392,7 @@ git log --no-merges --stat --reverse master..
 
 ## Pick commits across branches using cherry-pick
 ```sh
-git checkout <branch-name> && cherry-pick <commit-ish>
+git checkout <branch-name> && git cherry-pick <commit-ish>
 ```
 
 ## Find out branches containing commit-hash
@@ -312,15 +423,57 @@ __Alternatives:__
 git stash save
 ```
 
-## Saving current state including untracked files
+## Saving current state of unstaged changes to tracked files
 ```sh
-git stash save -u
+git stash -k
 ```
 
 
 __Alternatives:__
 ```sh
+git stash --keep-index
+```
+
+
+```sh
+git stash save --keep-index
+```
+
+## Saving current state including untracked files
+```sh
+git stash -u
+```
+
+
+__Alternatives:__
+```sh
+git stash save -u
+```
+
+
+```sh
 git stash save --include-untracked
+```
+
+## Saving current state with message
+```sh
+git stash save <message>
+```
+
+## Saving current state of all files (ignored, untracked, and tracked)
+```sh
+git stash -a
+```
+
+
+__Alternatives:__
+```sh
+git stash --all
+```
+
+
+```sh
+git stash save --all
 ```
 
 ## Show list of all saved stashes
@@ -428,6 +581,17 @@ git clean -df
 git submodule foreach git pull
 ```
 
+
+__Alternatives:__
+```sh
+git submodule update --init --recursive
+```
+
+
+```sh
+git submodule update --remote
+```
+
 ## Show all commits in the current branch yet to be merged to master
 ```sh
 git cherry -v master
@@ -450,9 +614,9 @@ __Alternatives:__
 git branch -m [<old-branch-name>] <new-branch-name>
 ```
 
-## rebases 'feature' to 'master' and merges it in to master 
+## Rebases 'feature' to 'master' and merges it in to master 
 ```sh
-git checkout feature && git rebase @{-1} && git checkout @{-2} && git merge @{-1}
+git rebase master feature && git checkout master && git merge -
 ```
 
 ## Archive the `master` branch
@@ -465,7 +629,7 @@ git archive master --format=zip --output=master.zip
 git add --all && git commit --amend --no-edit
 ```
 
-## Prunes branches that have been deleted in the remote.
+## Prunes references to remote branches that have been deleted in the remote.
 ```sh
 git fetch -p
 ```
@@ -479,6 +643,22 @@ git remote prune origin
 ## Retrieve the commit hash of the initial revision.
 ```sh
  git rev-list --reverse HEAD | head -1
+```
+
+
+__Alternatives:__
+```sh
+git rev-list --max-parents=0 HEAD
+```
+
+
+```sh
+git log --pretty=oneline | tail -1 | cut -c 1-40
+```
+
+
+```sh
+git log --pretty=oneline --reverse | head -1 | cut -c 1-40
 ```
 
 ## Visualize the version tree.
@@ -507,7 +687,7 @@ git subtree add --prefix=<directory_name>/<project_name> --squash git@github.com
 git subtree pull --prefix=<directory_name>/<project_name> --squash git@github.com:<username>/<project_name>.git master
 ```
 
-## Export a branch with history to the a file.
+## Export a branch with history to a file.
 ```sh
 git bundle create <file> <branch-name>
 ```
@@ -553,6 +733,11 @@ git describe --tags --abbrev=0
 git diff --word-diff
 ```
 
+## Show changes using common diff tools.
+```sh
+git difftool -t <commit1> <commit2> <path>
+```
+
 ## Don’t consider changes for tracked file.
 ```sh
 git update-index --assume-unchanged <file_name>
@@ -580,6 +765,13 @@ git checkout <commit-ish> -- <file_path>
 
 ## Always rebase instead of merge on pull.
 ```sh
+git config --global pull.rebase true
+```
+
+
+__Alternatives:__
+```sh
+#git < 1.7.9
 git config --global branch.autosetuprebase always
 ```
 
@@ -591,6 +783,11 @@ git config --list
 ## Make git case sensitive.
 ```sh
 git config --global core.ignorecase false
+```
+
+## Add custom editors.
+```sh
+git config --global core.editor '$EDITOR'
 ```
 
 ## Auto correct typos.
@@ -613,14 +810,19 @@ git clean -fd --dry-run
 git commit --fixup <SHA-1>
 ```
 
-## squash fixup commits normal commits.
+## Squash fixup commits normal commits.
 ```sh
 git rebase -i --autosquash
 ```
 
-## skip staging area during commit.
+## Skip staging area during commit.
 ```sh
-git commit -am <commit message>
+git commit --only <file_path>
+```
+
+## Interactive staging.
+```sh
+git add -i
 ```
 
 ## List ignored files.
@@ -638,7 +840,18 @@ git status --ignored
 git log Branch1 ^Branch2
 ```
 
-## reuse recorded resolution, record and reuse previous conflicts resolutions.
+## List n last commits
+```sh
+git log -<n>
+```
+
+
+__Alternatives:__
+```sh
+git log -n <n>
+```
+
+## Reuse recorded resolution, record and reuse previous conflicts resolutions.
 ```sh
 git config --global rerere.enabled 1
 ```
@@ -676,6 +889,284 @@ git config --global --unset <entry-name>
 ## Checkout a new branch without any history
 ```sh
 git checkout --orphan <branch_name>
+```
+
+## Extract file from another branch.
+```sh
+git show <branch_name>:<file_name>
+```
+
+## List only the root and merge commits.
+```sh
+git log --first-parent
+```
+
+## Change previous two commits with an interactive rebase.
+```sh
+git rebase --interactive HEAD~2
+```
+
+## List all branch is WIP
+```sh
+git checkout master && git branch --no-merged
+```
+
+## Find guilty with binary search
+```sh
+git bisect start                    # Search start 
+git bisect bad                      # Set point to bad commit 
+git bisect good v2.6.13-rc2         # Set point to good commit|tag 
+git bisect bad                      # Say current state is bad 
+git bisect good                     # Say current state is good 
+git bisect reset                    # Finish search 
+
+```
+
+## Bypass pre-commit and commit-msg githooks
+```sh
+git commit --no-verify
+```
+
+## List commits and changes to a specific file (even through renaming)
+```sh
+git log --follow -p -- <file_path>
+```
+
+## Clone a single branch
+```sh
+git clone -b <branch-name> --single-branch https://github.com/user/repo.git
+```
+
+## Create and switch new branch
+```sh
+git checkout -b <branch-name>
+```
+
+
+__Alternatives:__
+```sh
+git branch <branch-name> && git checkout <branch-name>
+```
+
+## Ignore file mode changes on commits
+```sh
+git config core.fileMode false
+```
+
+## Turn off git colored terminal output
+```sh
+git config --global color.ui false
+```
+
+## Specific color settings
+```sh
+git config --global <specific command e.g branch, diff> <true, false or always>
+```
+
+## Show all local branches ordered by recent commits
+```sh
+git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
+```
+
+## Find lines matching the pattern (regex or string) in tracked files
+```sh
+git grep --heading --line-number 'foo bar'
+```
+
+## Clone a shallow copy of a repository
+```sh
+git clone https://github.com/user/repo.git --depth 1
+```
+
+## Search Commit log across all branches for given text
+```sh
+git log --all --grep='<given-text>'
+```
+
+## Get first commit in a branch (from master)
+```sh
+git log master..<branch-name> --oneline | tail -1
+```
+
+## Unstaging Staged file
+```sh
+git reset HEAD <file-name>
+```
+
+## Force push to Remote Repository
+```sh
+git push -f <remote-name> <branch-name>
+```
+
+## Adding Remote name
+```sh
+git remote add <remote-nickname> <remote-url>
+```
+
+## Show the author, time and last revision made to each line of a given file
+```sh
+git blame <file-name>
+```
+
+## Group commits by authors and title
+```sh
+git shortlog
+```
+
+## Forced push but still ensure you don't overwrite other's work
+```sh
+git push --force-with-lease <remote-name> <branch-name>
+```
+
+## Show how many lines does an author contribute
+```sh
+git log --author='_Your_Name_Here_' --pretty=tformat: --numstat | gawk '{ add += <!-- @doxie.inject start -->; subs += <!-- @doxie.inject end -->; loc += <!-- @doxie.inject start --> - <!-- @doxie.inject end --> } END { printf "added lines: %s removed lines: %s total lines: %s
+", add, subs, loc }' -
+```
+
+
+__Alternatives:__
+```sh
+git log --author='_Your_Name_Here_' --pretty=tformat: --numstat | awk '{ add += <!-- @doxie.inject start -->; subs += <!-- @doxie.inject end -->; loc += <!-- @doxie.inject start --> - <!-- @doxie.inject end --> } END { printf "added lines: %s, removed lines: %s, total lines: %s
+", add, subs, loc }' - # on Mac OSX
+```
+
+## Revert: Reverting an entire merge
+```sh
+git revert -m 1 <commit-ish>
+```
+
+## Number of commits in a branch
+```sh
+git rev-list --count <branch-name>
+```
+
+## Alias: git undo
+```sh
+git config --global alias.undo '!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f'
+```
+
+## Add object notes
+```sh
+git notes add -m 'Note on the previous commit....'
+```
+
+## Show all the git-notes
+```sh
+git log --show-notes='*'
+```
+
+## Apply commit from another repository
+```sh
+git --git-dir=<source-dir>/.git format-patch -k -1 --stdout <SHA1> | git am -3 -k
+```
+
+## Specific fetch reference
+```sh
+git fetch origin master:refs/remotes/origin/mymaster
+```
+
+## Find common ancestor of two branches
+```sh
+diff -u <(git rev-list --first-parent BranchA) <(git rev-list --first-parent BranchB) | sed -ne 's/^ //p' | head -1
+```
+
+## List unpushed git commits
+```sh
+git log --branches --not --remotes
+```
+
+
+__Alternatives:__
+```sh
+git log @{u}..
+```
+
+
+```sh
+git cherry -v
+```
+
+## Add everything, but whitespace changes
+```sh
+git diff --ignore-all-space | git apply --cached
+```
+
+## Edit [local/global] git config
+```sh
+git config [--global] --edit
+```
+
+## blame on certain range
+```sh
+git blame -L <start>,<end>
+```
+
+## Show a Git logical variable.
+```sh
+git var -l | <variable>
+```
+
+## Preformatted patch file.
+```sh
+git format-patch -M upstream..topic
+```
+
+## Get the repo name.
+```sh
+git rev-parse --show-toplevel
+```
+
+## logs between date range
+```sh
+git log --since='FEB 1 2017' --until='FEB 14 2017'
+```
+
+## Exclude author from logs
+```sh
+git log --perl-regexp --author='^((?!excluded-author-regex).*)
+
+```
+
+## Generates a summary of pending changes
+```sh
+git request-pull v1.0 https://git.ko.xz/project master:for-linus
+```
+
+## List references in a remote repository
+```sh
+git ls-remote git://git.kernel.org/pub/scm/git/git.git
+```
+
+## Backup untracked files.
+```sh
+git ls-files --others -i --exclude-standard | xargs zip untracked.zip
+```
+
+## List all git aliases
+```sh
+git config -l | grep alias | sed 's/^alias\.//g'
+```
+
+
+__Alternatives:__
+```sh
+git config -l | grep alias | cut -d '.' -f 2
+```
+
+## Show git status short
+```sh
+git status --short --branch
+```
+
+## Checkout a commit prior to a day ago
+```sh
+git checkout master@{yesterday}
+```
+
+## Push a new local branch to remote repository and track
+```sh
+git push -u origin <branch_name>
 ```
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
